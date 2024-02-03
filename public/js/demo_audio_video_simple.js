@@ -2,6 +2,8 @@ var selfEasyrtcid = "";
 
 
 function connect() {
+        easyrtc.enableVideo(false);
+    easyrtc.enableVideoReceive(false);
     easyrtc.setSocketUrl("https://trucoapp-serverrtc.onrender.com");
     easyrtc.setRoomOccupantListener(convertListToButtons);
     easyrtc.easyApp("easyrtc.audioVideoSimple", "selfVideo", ["callerVideo"], loginSuccess, loginFailure);

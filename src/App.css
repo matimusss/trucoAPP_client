@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Cambiado de space-between a flex-start */
+}
+
+.trucoclient-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Cambiado de space-between a flex-start */
+  width: 100%;
+}

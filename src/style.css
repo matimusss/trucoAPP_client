@@ -1,0 +1,147 @@
+
+.body {
+  font-family: 'Arial';
+  /* Puedes agregar más fuentes en orden de preferencia, separadas por comas */
+  /* Ejemplo: font-family: 'Roboto', 'Arial', sans-serif; */
+}
+
+/* Otros estilos para diferentes elementos en tu sitio */
+h1, h2, h3, p {
+  /* Estilos para títulos y párrafos, puedes ajustar según sea necesario */
+}
+  .container 
+  {
+   
+   height: 100vh;
+  }
+  .menuSuperior, .menuInferior {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuSuperior {
+    height: 5%;
+  }
+  .menuInferior {
+    height: 5%;
+  }
+  .tablero {
+    background-image: url("background.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+  
+  }
+  .inner-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .flex-row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+   
+
+.flex-row > .inner-div:nth-child(1) {
+flex: 0 1 15%;
+justify-content: flex-end ; /* o flex-end, center, space-between, space-around, según sea necesario */
+
+}
+
+.flex-row > .inner-div:nth-child(2) {
+flex: 0 1 35%;
+justify-content: flex-start ;
+}
+
+.flex-row > .inner-div:nth-child(3) {
+flex: 0 1 35%;
+justify-content: flex-end ;
+}
+
+.flex-row > .inner-div:nth-child(4) {
+flex: 0 1 15%;
+justify-content: flex-start ;
+}
+
+
+
+
+.tablero > div:nth-child(1) {
+  flex: 0 1 10%;
+}
+.tablero > div:nth-child(2){
+  flex: 0 1 20%;
+}
+.tablero > div:nth-child(3) {
+  flex: 0 1 25%;
+}
+.tablero > div:nth-child(4) {
+  flex: 0 1 25%;
+}
+.tablero > div:nth-child(5) {
+  flex: 0 1 20%;
+}
+
+
+
+
+  .cardImg {
+    width: 70px;
+     height: 100px; 
+     border-radius: 4px; 
+position: absolute;
+     box-shadow: 1px 19px 27px 0px rgba(0,0,0,0.75);
+     -webkit-box-shadow: 1px 19px 27px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 1px 19px 27px 0px rgba(0,0,0,0.75);
+
+
+
+  }
+
+
+
+
+
+/*  avatar */
+.avatarContainer {
+  
+  border-radius:100px 100px 12px 12px;
+  -moz-border-radius:100px 100px 12px 12px;
+  -webkit-border-radius:100px 100px 12px 12px;
+background-color: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+display: flex;
+flex-direction: column;
+
+box-shadow: 1px 19px 27px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 19px 27px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 19px 27px 0px rgba(0,0,0,0.75);
+/*transform: translateX(-80px);*/
+transform: translateY(80px);
+
+
+
+
+}
+
+.avatarRow {
+  /* Estilos para cada fila dentro de avatarContainer */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.avatarimg {
+  height: 80px;
+
+}

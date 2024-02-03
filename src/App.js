@@ -10,7 +10,7 @@ const TrucoClient = Client({
   game: Truco,
   board: TrucoBoard2,
 numPlayers: 6,
-  multiplayer: SocketIO({ server: 'https://truco-server.onrender.com/' }),
+  multiplayer: SocketIO({ server: 'https://trucoapp-server.onrender.com' }),
 
 });
  
